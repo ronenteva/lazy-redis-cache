@@ -1,18 +1,19 @@
 # lazy-redis-cache
 
-cache.wrap({
-      key: 'test',
-      value: function (cb) {
-          var value = 'Hello World"
-          cb(null, value);
-      },
-      ttl: 24 * 60 * 60, //TTL in seconds
-      lazy: true
-    }, function(err,cached){
-    console.log(cached);
-    };
-    )
+      cache.wrap({
+            key: 'test',
+            value: function (cb) {
+                var value = 'Hello World"
+                cb(null, value);
+            },
+            ttl: 24 * 60 * 60, //TTL in seconds
+            lazy: true
+          }, function(err,cached){
+              console.log(cached);
+          };
+      )
 
+### Dynamic TTL
 
     cache.wrap({
           key: 'test',
@@ -31,6 +32,6 @@ cache.wrap({
           },
           lazy: true
         }, function(err,cached){
-        console.log(cached);
+            console.log(cached);
         };
-        )
+      )
