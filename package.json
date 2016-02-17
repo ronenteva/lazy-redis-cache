@@ -1,0 +1,27 @@
+{
+  "name": "lazy-redis-cache",
+  "version": "1.0.0",
+  "description": "A redis cache wrapper which returns results first, and refreshes data later",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronenteva/lazy-redis-cache.git"
+  },
+  "keywords": [
+    "redis",
+    "cache",
+    "lazy"
+  ],
+  "author": "Ronen Teva <ronenteva@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ronenteva/lazy-redis-cache/issues"
+  },
+  "homepage": "https://github.com/ronenteva/lazy-redis-cache#readme",
+  "dependencies": {
+    "redis": "^2.4.2"
+  }
+}
